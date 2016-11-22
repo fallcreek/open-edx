@@ -92,3 +92,14 @@ for problem in attempt:
           continue
         print(ans)
           
+
+# new task : analyse hint performance 
+# store the combined dic into a pkl
+store_combine = True
+if store_combine == False:
+  exit(0)
+
+path = 'pkl/'
+f = open(path + 'combined.pkl','wb')
+pickle.dump(attempt,f)
+f.close()

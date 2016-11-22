@@ -1,6 +1,7 @@
 import pickle
 
-student_answer = pickle.load(open('pkl/student_answer.pkl','r'))
+student_answer = pickle.load(open('pkl/student_hint.pkl','r'))
 for line in student_answer:
-    print line
+    if line[0] == '5':
+	print student_answer[line]
 

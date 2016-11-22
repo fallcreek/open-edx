@@ -1,9 +1,9 @@
+#!/usr/bin/python
 import MySQLdb
 import sys,json
 import pickle
 import re
 from datetime import timedelta
-
 sys.path.insert(0,'/home/edxdeveloper/zyli')
 from generate_answer import generate_answer
 
@@ -16,7 +16,7 @@ cursor.execute(
 res = []
 locationDict = {}
 
-with open('locationToProblem.txt', 'r') as f:
+with open('/home/edxdeveloper/zyli/student_data/locationToProblem.txt', 'r') as f:
   for line in f:
     s=line.strip().split(' ')
     locationDict[s[0]]=[s[1],s[2]]
@@ -59,7 +59,7 @@ for line in cursor.fetchall():
 	 answer = 'null'
       res.append({'answer':answer, 'attempt':attempt, 'part_id':str(part_id), 'problem_id':problem_id, 'score':pts, 'set_id':week_id,'timestamp':last_submission_time,'user_id':student_id, 'username':username})
 
-path = 'pkl/'
+path = '/home/edxdeveloper/zyli/student_data/pkl/'
 f = open(path+'student_answer.pkl','wb')
 pickle.dump(res,f)
 f.close()
@@ -93,14 +93,14 @@ for line in cursor.fetchall():
 
   problem_key = (week_id,problem_id,part_id)
   student_key = (student_id,student_name)
-  value = [time,attempt_hint,hint]
+  value = [time,attempt_hint,hint,'Hint']
   if problem_key not in hint_data:
     hint_data[problem_key] = {}
   if student_key not in hint_data[problem_key]:
     hint_data[problem_key][student_key] = []
   hint_data[problem_key][student_key].append(value)
   hint_count += 1
-  #print hint_count
+	#print hint_count
   #print problem_key
   #print student_key
 

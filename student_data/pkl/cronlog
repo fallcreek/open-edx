@@ -1,0 +1,44 @@
+update succeed!
+shell script run!!! Tue Nov 22 08:00:41 PST 2016
+Updating 48d0e29..2adbde9
+Fast-forward
+ .gitignore                                         |   3 +-
+ .../TestPreparation/Bayes1.imd                     |  33 ++++++
+ .../problem_source_files/xueyangli/cond14_hint.pg  |  71 ++++++++++++
+ .../xueyangli/expectedvalue1_hint.pg               |  50 +++++++++
+ .../problem_source_files/xueyangli/exval1_hint.pg  |  78 +++++++++++++
+ .../problem_source_files/xueyangli/exval2_hint.pg  |  86 ++++++++++++++
+ .../problem_source_files/xueyangli/exval3_hint.pg  |  78 +++++++++++++
+ .../xueyangli/ur_pb_17_1_hint.pg                   |  64 +++++++++++
+ .../xueyangli/ur_pb_17_2_hint.pg                   |  72 ++++++++++++
+ .../xueyangli/ur_pb_5_1_hint.pg                    |  81 +++++++++++++
+ .../problem_source_files/zhipengyan/Bayes2_hint.pg |  99 ++++++++++++++++
+ .../problem_source_files/zhipengyan/Bayes3_hint.pg | 125 +++++++++++++++++++++
+ .../problem_source_files/zhipengyan/cond1_hint.pg  |  95 ++++++++++++++++
+ .../problem_source_files/zhipengyan/cond6_hint.pg  |  77 +++++++++++++
+ .../problem_source_files/zhipengyan/cond7_hint.pg  | 112 ++++++++++++++++++
+ .../zhipengyan/events5_hint.pg                     |  65 +++++++++++
+ .../zhipengyan/events6_hint.pg                     |  76 +++++++++++++
+ .../zhipengyan/events7_hint.pg                     |  63 +++++++++++
+ 18 files changed, 1327 insertions(+), 1 deletion(-)
+ create mode 100644 problem_database/problem_source_files/TestPreparation/Bayes1.imd
+ create mode 100755 problem_database/problem_source_files/xueyangli/cond14_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/expectedvalue1_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/exval1_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/exval2_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/exval3_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/ur_pb_17_1_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/ur_pb_17_2_hint.pg
+ create mode 100755 problem_database/problem_source_files/xueyangli/ur_pb_5_1_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/Bayes2_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/Bayes3_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/cond1_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/cond6_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/cond7_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/events5_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/events6_hint.pg
+ create mode 100755 problem_database/problem_source_files/zhipengyan/events7_hint.pg
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+nothing to commit, working directory clean
